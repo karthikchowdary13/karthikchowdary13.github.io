@@ -804,6 +804,12 @@ ul {
 }
 
 @media (max-width: 992px) {
+    .hero-section {
+        padding-top: 120px;
+        padding-bottom: 3rem;
+        align-items: flex-start;
+    }
+    
     .two-col-hero .hero-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
