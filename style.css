@@ -1941,7 +1941,7 @@ ul {
         height: 100vh;
         background-color: rgba(15, 23, 42, 1); /* Fully opaque dark background */
         border-left: 1px solid rgba(255, 255, 255, 0.15);
-        box-shadow: -20px 0 60px rgba(0, 0, 0, 0.5);
+        box-shadow: none;
         padding: 7rem 2rem 2rem;
         transition: right 0.5s cubic-bezier(0.25, 1, 0.5, 1);
         z-index: 90;
@@ -1949,6 +1949,7 @@ ul {
 
     .nav-menu.open {
         right: 0;
+        box-shadow: -20px 0 60px rgba(0, 0, 0, 0.5);
     }
 
     .nav-list {
