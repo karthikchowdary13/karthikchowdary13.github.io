@@ -607,14 +607,16 @@ ul {
     justify-content: space-between;
 }
 
-.name-title{
+.name-title {
+    font-size: clamp(2rem, 5vw, 4.5rem);
     font-family: var(--font-DM Serif Display);
     color: #399ced;
     font-weight: 500;
     margin-bottom: 0.5rem;
-    margin-left: 24rem; /* Change this value manually to move it left or right */
+    margin-left: 0;
     letter-spacing: 0.10rem;
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .eyebrow-text {
@@ -624,8 +626,8 @@ ul {
     color: var(--text-muted);
     margin-bottom: 2rem;
     text-transform: uppercase;
-    margin-left: 23.5rem; /* Change this value manually to move it left or right */
-    white-space: nowrap;
+    margin-left: 0;
+    white-space: normal;
 }
 
 .editorial-title {

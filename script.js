@@ -39,6 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.style.overflow = '';
             });
         });
+        
+        // Close menu when logo is clicked
+        const logo = document.querySelector('.logo');
+        if (logo) {
+            logo.addEventListener('click', () => {
+                menuToggle.classList.remove('open');
+                navMenu.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        }
     }
 
     // --- Navbar Scroll Effect ---
