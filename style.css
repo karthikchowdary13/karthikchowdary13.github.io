@@ -809,9 +809,17 @@ ul {
         align-items: flex-start;
     }
     
+    .hero-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .name-title {
         margin-left: 0;
         white-space: normal;
+        text-align: center;
     }
     
     .eyebrow-text {
@@ -828,6 +836,8 @@ ul {
     .stats-row {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        text-align: left;
+        width: 100%;
     }
 }
 
