@@ -1939,7 +1939,7 @@ ul {
         right: -100vw;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(15, 23, 42, 1); /* Fully opaque dark background */
+        background-color: var(--dark-gold); /* Solid website theme color */
         border-left: 1px solid rgba(255, 255, 255, 0.15);
         box-shadow: none;
         padding: 7rem 2rem 2rem;
