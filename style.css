@@ -1570,6 +1570,8 @@ ul {
     max-width: var(--card-max-width);
     margin: 0 auto;
     padding: var(--card-padding-top) var(--card-padding-sides) var(--card-padding-bottom);
+    width: 100%;
+    box-sizing: border-box;
     
     position: relative;
     border-radius: 24px;
@@ -1892,8 +1894,8 @@ ul {
         z-index: 102;
         opacity: 0;
         visibility: hidden;
-        transform: translateX(-20px);
-        transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        transform: translateX(100vw);
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease;
     }
     
     .logo.open {
