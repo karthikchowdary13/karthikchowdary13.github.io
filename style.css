@@ -613,9 +613,9 @@ ul {
     color: #399ced;
     font-weight: 500;
     margin-bottom: 0.5rem;
-    margin-left: 0;
+    margin-left: 24rem; /* Restored for desktop */
     letter-spacing: 0.10rem;
-    white-space: normal;
+    white-space: nowrap;
     word-wrap: break-word;
 }
 
@@ -626,8 +626,8 @@ ul {
     color: var(--text-muted);
     margin-bottom: 2rem;
     text-transform: uppercase;
-    margin-left: 0;
-    white-space: normal;
+    margin-left: 23.5rem; /* Restored for desktop */
+    white-space: nowrap;
 }
 
 .editorial-title {
@@ -808,6 +808,16 @@ ul {
         padding-top: 120px;
         padding-bottom: 3rem;
         align-items: flex-start;
+    }
+    
+    .name-title {
+        margin-left: 0;
+        white-space: normal;
+    }
+    
+    .eyebrow-text {
+        margin-left: 0;
+        white-space: normal;
     }
     
     .two-col-hero .hero-grid {
