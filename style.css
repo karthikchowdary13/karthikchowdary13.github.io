@@ -167,10 +167,10 @@ ul {
     text-decoration: none;
     
     /* Transparent Clear Glass 3D Style */
-    background: rgba(255, 255, 255, 0.15); /* Clear glass */
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Faint outer edge */
+    background: rgba(255, 255, 255, 0.4); /* Frosted glass */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Pronounced outer edge */
     
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
                 opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
@@ -1885,9 +1885,11 @@ ul {
         right: -100vw;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(245, 248, 250, 0.96); /* Solid frost */
-        backdrop-filter: blur(24px);
-        -webkit-backdrop-filter: blur(24px);
+        background-color: rgba(255, 255, 255, 0.65); /* Frosted glass */
+        backdrop-filter: blur(35px);
+        -webkit-backdrop-filter: blur(35px);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
         padding: 7rem 2rem 2rem;
         transition: right 0.5s cubic-bezier(0.25, 1, 0.5, 1);
         z-index: 90;
@@ -1910,7 +1912,10 @@ ul {
         justify-content: flex-start;
         padding: 1rem 1.5rem;
         border-radius: 16px;
-        background: rgba(0, 0, 0, 0.02);
+        background: rgba(255, 255, 255, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(10px);
     }
     
     .nav-link span {
