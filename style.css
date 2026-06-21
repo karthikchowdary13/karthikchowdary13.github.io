@@ -1913,10 +1913,6 @@ ul {
         visibility: visible;
         transform: translateX(0);
     }
-    
-    .logo.open .navbar-logo-img {
-        filter: brightness(0) invert(1);
-    }
 
     .mobile-menu-toggle {
         display: flex;
@@ -1939,7 +1935,7 @@ ul {
         right: -100vw;
         width: 100vw;
         height: 100vh;
-        background-color: var(--dark-gold); /* Solid website theme color */
+        background-color: #eaf6f8; /* Solid light cyan/blue website background */
         border-left: 1px solid rgba(255, 255, 255, 0.15);
         box-shadow: none;
         padding: 7rem 2rem 2rem;
@@ -1965,35 +1961,34 @@ ul {
         justify-content: flex-start;
         padding: 1rem 1.5rem;
         border-radius: 16px;
-        background: rgba(255, 255, 255, 0.1); /* Brighter base for fallback */
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-        color: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 0.4); /* Light glass base */
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-top: 1px solid rgba(255, 255, 255, 1);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+        color: var(--text-main);
         transition: all 0.3s ease;
     }
     
     @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
         .nav-link {
-            background: rgba(255, 255, 255, 0.06); /* More translucent for glass */
+            background: rgba(255, 255, 255, 0.3); /* Translucent light glass */
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
         }
     }
     
     .nav-link:hover, .nav-link.active {
-        background: rgba(255, 255, 255, 0.15) !important;
-        color: #ffffff !important;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.8) !important;
+        color: var(--primary-gold) !important;
+        border: 1px solid rgba(255, 255, 255, 1);
     }
     
     .nav-link svg {
-        color: rgba(255, 255, 255, 0.75);
+        color: var(--text-main);
     }
     
     .nav-link:hover svg, .nav-link.active svg {
-        color: #ffffff !important;
+        color: var(--primary-gold) !important;
     }
     
     .nav-link span {
