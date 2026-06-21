@@ -834,10 +834,17 @@ ul {
     }
     
     .stats-row {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 2rem;
-        text-align: left;
+        text-align: center;
         width: 100%;
+    }
+    
+    .stat-item {
+        align-items: center;
+        min-width: 40%;
     }
 }
 
