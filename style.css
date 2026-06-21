@@ -1811,7 +1811,7 @@ ul {
         padding: 0 1rem;
     }
 
-    .eyebrow-text {
+    .eyebrow-text, .name-title {
         margin-left: 0;
         white-space: normal;
     }
