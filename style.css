@@ -1670,7 +1670,11 @@ ul {
     border-radius: 50px;
     
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
     
     /* Embossed Gel Shadows */
     box-shadow: 
@@ -1717,6 +1721,7 @@ ul {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    min-width: 0;
 }
 
 @media (max-width: 900px) {
