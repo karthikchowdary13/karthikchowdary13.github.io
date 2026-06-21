@@ -1890,6 +1890,20 @@ ul {
     .logo {
         margin: 0;
         z-index: 102;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-20px);
+        transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    
+    .logo.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    
+    .logo.open .navbar-logo-img {
+        filter: brightness(0) invert(1);
     }
 
     .mobile-menu-toggle {
@@ -1913,11 +1927,11 @@ ul {
         right: -100vw;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(250, 250, 250, 0.95); /* High opacity frosted glass to prevent bleed */
+        background-color: rgba(15, 23, 42, 0.95); /* Deep slate premium dark glass */
         backdrop-filter: blur(35px);
         -webkit-backdrop-filter: blur(35px);
-        border-left: 1px solid rgba(255, 255, 255, 0.5);
-        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: -20px 0 60px rgba(0, 0, 0, 0.2);
         padding: 7rem 2rem 2rem;
         transition: right 0.5s cubic-bezier(0.25, 1, 0.5, 1);
         z-index: 90;
@@ -1939,23 +1953,47 @@ ul {
         width: 100%;
         justify-content: flex-start;
         padding: 1rem 1.5rem;
-        border-radius: 16px;
-        background: rgba(255, 255, 255, 0.4);
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        background: transparent;
+        border: 1px solid transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        color: rgba(255, 255, 255, 0.75);
+        transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover, .nav-link.active {
+        background: rgba(255, 255, 255, 0.1) !important;
+        color: #ffffff !important;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-link svg {
+        color: rgba(255, 255, 255, 0.75);
+    }
+    
+    .nav-link:hover svg, .nav-link.active svg {
+        color: #ffffff !important;
     }
     
     .nav-link span {
         opacity: 1 !important;
         width: auto !important;
         display: inline-block !important;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     /* Hamburger Animation */
+    .mobile-menu-toggle.open {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
     .mobile-menu-toggle.open .hamburger {
         background-color: transparent;
+    }
+    .mobile-menu-toggle.open .hamburger::before,
+    .mobile-menu-toggle.open .hamburger::after {
+        background-color: #ffffff;
     }
     .mobile-menu-toggle.open .hamburger::before {
         transform: rotate(45deg);

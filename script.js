@@ -23,11 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
+    const logo = document.querySelector('.logo');
 
     if (menuToggle && navMenu) {
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('open');
             navMenu.classList.toggle('open');
+            if (logo) logo.classList.toggle('open');
             document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
         });
 
@@ -36,16 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 menuToggle.classList.remove('open');
                 navMenu.classList.remove('open');
+                if (logo) logo.classList.remove('open');
                 document.body.style.overflow = '';
             });
         });
         
         // Close menu when logo is clicked
-        const logo = document.querySelector('.logo');
         if (logo) {
             logo.addEventListener('click', () => {
                 menuToggle.classList.remove('open');
                 navMenu.classList.remove('open');
+                logo.classList.remove('open');
                 document.body.style.overflow = '';
             });
         }
