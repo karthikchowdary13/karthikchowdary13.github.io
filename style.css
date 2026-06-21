@@ -1892,7 +1892,17 @@ ul {
     }
 
     .mobile-menu-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         z-index: 102;
     }
 
@@ -1902,7 +1912,7 @@ ul {
         right: -100vw;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(255, 255, 255, 0.65); /* Frosted glass */
+        background-color: rgba(250, 250, 250, 0.95); /* High opacity frosted glass to prevent bleed */
         backdrop-filter: blur(35px);
         -webkit-backdrop-filter: blur(35px);
         border-left: 1px solid rgba(255, 255, 255, 0.5);
