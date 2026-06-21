@@ -1725,13 +1725,21 @@ ul {
 }
 
 @media (max-width: 900px) {
+    .contact-glass-card {
+        padding: 2rem 1rem;
+    }
+
     .contact-grid {
-        grid-template-columns: 2fr;
-        gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
     .contact-huge-text {
-        font-size: 1rem;
+        font-size: clamp(2.5rem, 8vw, 3.5rem);
+    }
+    
+    .contact-box {
+        --box-padding: 0.85rem 1rem;
     }
 }
 
