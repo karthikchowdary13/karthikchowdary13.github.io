@@ -1929,11 +1929,11 @@ ul {
         right: -100vw;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(15, 23, 42, 0.95); /* Deep slate premium dark glass */
-        backdrop-filter: blur(35px);
-        -webkit-backdrop-filter: blur(35px);
-        border-left: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: -20px 0 60px rgba(0, 0, 0, 0.2);
+        background-color: rgba(10, 15, 30, 0.35); /* Highly translucent dark background */
+        backdrop-filter: blur(40px) saturate(150%);
+        -webkit-backdrop-filter: blur(40px) saturate(150%);
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: -20px 0 60px rgba(0, 0, 0, 0.3);
         padding: 7rem 2rem 2rem;
         transition: right 0.5s cubic-bezier(0.25, 1, 0.5, 1);
         z-index: 90;
@@ -1955,19 +1955,22 @@ ul {
         width: 100%;
         justify-content: flex-start;
         padding: 1rem 1.5rem;
-        border-radius: 12px;
-        background: transparent;
-        border: 1px solid transparent;
-        box-shadow: none;
-        backdrop-filter: none;
-        color: rgba(255, 255, 255, 0.75);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        color: rgba(255, 255, 255, 0.85);
         transition: all 0.3s ease;
     }
     
     .nav-link:hover, .nav-link.active {
-        background: rgba(255, 255, 255, 0.1) !important;
+        background: rgba(255, 255, 255, 0.15) !important;
         color: #ffffff !important;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
     }
     
     .nav-link svg {
