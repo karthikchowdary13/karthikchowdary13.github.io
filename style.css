@@ -1935,8 +1935,8 @@ ul {
         right: -100vw;
         width: 100vw;
         height: 100vh;
-        background-color: #eaf6f8; /* Solid light cyan/blue website background */
-        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        background-color: #c0eaf0; /* Solid watercolor cyan */
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
         box-shadow: none;
         padding: 7rem 2rem 2rem;
         transition: right 0.5s cubic-bezier(0.25, 1, 0.5, 1);
